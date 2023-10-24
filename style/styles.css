@@ -1,0 +1,76 @@
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+li:hover{
+    color: orangered;
+    border-right: solid orangered 10px ;
+}
+
+.rectangleDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.rectangle3:hover{
+    animation: rotation 1s linear infinite;
+}
+
+h1:hover{
+    animation: text 5s linear infinite;
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(90deg);
+        border-radius: 100%;
+    }
+}
+
+@keyframes text {
+    0% {
+        background-color: blue;
+        color: greenyellow;
+        font-style: caption;
+        font-size: 34px;
+    }
+    20% {
+        background-color: cyan;
+        color: green;
+        font-style: italic;
+        font-size: 50px;
+    }
+    40% {
+        background-color: red;
+        color: gray;
+        font-style: inherit;
+        font-size: 25px;
+    }
+    60% {
+        background-color: orange;
+        color: blue;
+        font-style: revert;
+        font-size: 67px;
+    }
+    80% {
+        background-color: gray;
+        color: yellow;
+        font-style: unset;
+        font-size: 25px;
+    }
+    100%{
+        background-color: black;
+        color: white;
+        font-style: initial;
+        font-size: 34px;
+    }
+}
